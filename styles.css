@@ -1,0 +1,140 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    font-family: 'outfit', sans-serif;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 100%;
+    max-width: 22rem;
+    border-radius: 1rem;
+    margin: auto;
+    padding: 1.25rem;
+}
+
+.img {
+    position: relative;
+    width: 100%;
+    max-width: 22rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.nft-img {
+    width: 100%;
+    height: auto;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.img:hover .img-overlay {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#img-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3.125rem;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+h1 {
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+.nft-title:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+p {
+    font-size: 1.13rem;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price>h2 {
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+
+hr {
+    border: solid 1px hsl(215, 32%, 27%);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    column-gap: 1.25rem;
+}
+
+.avatar-img {
+    width: 100%;
+    max-width: 2.5rem;
+    height: auto;
+    border:white 0.13rem solid;
+    border-radius: 50%;
+}
+
+.author-name {
+    color: hsl(0, 0%, 100%);
+}
+
+.author-name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.nft-title,.h1p,.price,hr {
+    margin-bottom: 1.25rem;
+}
