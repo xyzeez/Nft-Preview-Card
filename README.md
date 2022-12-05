@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-nft-preview-card-taXIFuoz24)
 - Live Site URL: [Add live site URL here](https://femc-nft-preview-card.netlify.app/)
 
 ## My process
