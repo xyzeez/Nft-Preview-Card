@@ -1,35 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
         <title>Frontend Mentor | NFT preview card component</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=outfit">
-        <script src="https://kit.fontawesome.com/52582c7c01.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="card">
-            <div class="img">
-                <img class="nft-img" alt="nft-card" src="./images/image-equilibrium.jpg" />
-                <div class="img-overlay">
-                    <i id="img-icon" class="fa-solid fa-eye"></i>
+        <main>
+            <h1 class="sr-only">This is an NFT Preview Card</h1>
+            <section class="card card--shadow">
+                <a href="#" class="card__item card__item--overlay">
+                    <img class="card__image" alt="nft-card" src="./assets/images/image-equilibrium.jpg" >
+                </a>
+                <h2><a href="#" class="card__title card__title--hover link-text">Equilibrium #3429</a></h2>
+                <p class="card__paragraph">Our Equilibrium collection promotes balance and calm.</p>
+                <div class="card__price">
+                    <p class="card__price__tag card__price__tag--icon">0.041<abbr class="card__price__tag__abbr" title="Ethereum">ETH</abbr></p>
+                    <p class="card__price__time card__price__time--icon">3 days left</p>
                 </div>
-            </div>
-            <div class="txt">
-                <h1 class="nft-title">Equilibrium #3429</h1>
-                <p class="h1p">Our Equilibrium collection promotes balance and calm.</p>
-                <div class="price">
-                    <h2><i class="fa-brands fa-ethereum" style="margin-right: 0.63rem;"></i>0.041 ETH</h2>
-                    <p><i class="fa-regular fa-clock" style="margin-right: 0.63rem;"></i>3 days left</p>
-                </div>
-                <hr>
-                <div class="author">
-                    <img class="avatar-img" alt="avatar" src="./images/image-avatar.png"/>
-                    <p>Creation of <span class="author-name">Jules Wyvern</span></p>
-                </div>
-            </div>
-        </div>        
+                <picture class="card__author card__author--border">
+                    <img class="test card__author__avatar" alt="Headshot of the NFT creator" src="./assets/images/image-avatar.png">
+                    <figcaption class="card__author__paragraph">Creation of <a href="#" class="test2 card__author__paragraph__link card__author__paragraph__link--hover link-text">Jules Wyvern</a></figcaption>
+                </picture>
+            </section>
+        </main>        
     </body>
 </html>
