@@ -1,15 +1,19 @@
 # Frontend Mentor - NFT preview card component solution
 
-This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+![](./assets/images/screenshots/desktop-preview.jpg)
+
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
+
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -23,21 +27,29 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Frontend%20Mentor%20-%20NFT%20preview%20card%20component%20Mobile.png)
-![](./images/Frontend%20Mentor%20-%20NFT%20preview%20card%20component%20Web.png)
+- [Mobile](./assets/images/screenshots/mobile.png)
+- [Tablet](./assets/images/screenshots/Tablet.png)
+- [Desktop](./assets/images/screenshots/Desktop.png)
 
 ### Links
 
-- Solution URL: [Click Here](https://www.frontendmentor.io/solutions/responsive-nft-preview-card-taXIFuoz24)
-- Live Site URL: [Click Here](https://femc-nft-preview-card.netlify.app/)
+- [Solution](https://www.frontendmentor.io/solutions/responsive-nft-preview-card-taXIFuoz24)
+- [Live site](https://femc-nft-preview-card.netlify.app/)
 
 ## My process
 
 ### Built with
 
+- Mobile-first workflow
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- BEM
+- Animation
+
+### Useful resources
+
+- [Cubic-bezier generator](https://cubic-bezier.com/)
 
 
 ## Author
