@@ -1,0 +1,248 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  CSS Reset ends
+*/
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+.link-text {
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: hsl(217, 54%, 11%);
+}
+
+main {
+  margin: 1rem;
+  max-width: 21.875rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  z-index: 0;
+  background-color: hsl(216, 50%, 16%);
+  animation: entrance 1s cubic-bezier(.29,.83,.3,1.35);
+}
+
+.card__item {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.card__item--overlay::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background-color: hsla(178, 100%, 50%, 0.4);
+}
+
+.card__item--overlay::before {
+  position: absolute;
+  content: " ";
+  background-image: url(../images/icon-view.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 2rem;
+  color: hsl(0, 0%, 100%);
+  margin-top: 0.5rem;
+  transition: color 0.5s ease;
+}
+
+.card__paragraph {
+  font-size: 1.125rem;
+  font-weight: 300;  
+  line-height: 1.75rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.card__price {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5625rem 0rem 0.5rem;
+}
+
+.card__price__tag {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: hsl(178, 100%, 50%);
+}
+
+.card__price__tag--icon {
+  display: flex;
+  align-items: center;
+}
+
+.card__price__tag--icon::before {
+  display: inline-block;
+  margin-right: 0.4rem;
+  content: url(../images/icon-ethereum.svg);
+  width: fit-content;
+  height: 1.125rem;
+}
+
+.card__price__tag__abbr {
+  text-decoration: none;
+}
+
+.card__price__time {
+  font-size: 1rem;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.card__price__time--icon {
+  display: flex;
+  align-items: center;
+}
+
+.card__price__time--icon::before {
+  display: inline-block;
+  margin-right: 0.4rem;
+  content: url(../images/icon-clock.svg);
+  width: fit-content;
+  height: 1.125rem;
+}
+
+.card__author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.9375rem;
+}
+
+.card__author--border {
+  padding-top: 1.0625rem;
+  margin-bottom: 0.625rem;
+  border-top: 1px solid hsla(215, 51%, 70%, 0.2);
+}
+
+.card__author__avatar {
+  width: 2.0625rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 3.125rem;
+  height: auto;
+}
+
+.card__author__paragraph {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.012em;
+  color: hsl(215, 51%, 70%);
+}
+
+.card__author__paragraph__link {
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  transition: color 0.5s ease;
+}
+
+@media (hover: hover) {
+
+  .card__item--overlay:hover::after {
+    opacity: 1;
+  }
+  
+  .card__item--overlay:hover::before {
+    opacity: 1;
+  }
+
+  .card__title--hover:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+
+  .card__author__paragraph__link--hover:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+  
+}
+
+@keyframes entrance {
+
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+  
+}
