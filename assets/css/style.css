@@ -55,8 +55,8 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
   display: grid;
   place-content: center;
+  height: auto;
   min-height: 100vh;
-  overflow: hidden;
   background-color: hsl(217, 54%, 11%);
 }
 
@@ -70,6 +70,7 @@ main {
   flex-direction: column;
   gap: 0.75rem;
   padding: 1.5rem;
+  overflow: hidden;
   border-radius: 1rem;
   z-index: 0;
   background-color: hsl(216, 50%, 16%);
