@@ -76,14 +76,14 @@ main {
   animation: entrance 1s cubic-bezier(.29,.83,.3,1.35);
 }
 
-.card__item {
+.item-preview {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
   z-index: 1;
 }
 
-.card__item--overlay::after {
+.item-preview::after {
   position: absolute;
   content: " ";
   top: 0;
@@ -96,7 +96,7 @@ main {
   background-color: hsla(178, 100%, 50%, 0.4);
 }
 
-.card__item--overlay::before {
+.item-preview::before {
   position: absolute;
   content: " ";
   background-image: url(../images/icon-view.svg);
@@ -128,13 +128,13 @@ main {
   color: hsl(215, 51%, 70%);
 }
 
-.card__price {
+.price {
   display: flex;
   justify-content: space-between;
   margin: 0.5625rem 0rem 0.5rem;
 }
 
-.card__price__tag {
+.price__tag {
   display: flex;
   align-items: center;
   font-size: 1rem;
@@ -143,12 +143,12 @@ main {
   color: hsl(178, 100%, 50%);
 }
 
-.card__price__tag--icon {
+.price__tag--icon {
   display: flex;
   align-items: center;
 }
 
-.card__price__tag--icon::before {
+.price__tag--icon::before {
   display: inline-block;
   margin-right: 0.4rem;
   content: url(../images/icon-ethereum.svg);
@@ -156,22 +156,22 @@ main {
   height: 1.125rem;
 }
 
-.card__price__tag__abbr {
+abbr {
   text-decoration: none;
 }
 
-.card__price__time {
+.price__time {
   font-size: 1rem;
   font-weight: 300;
   color: hsl(215, 51%, 70%);
 }
 
-.card__price__time--icon {
+.price__time--icon {
   display: flex;
   align-items: center;
 }
 
-.card__price__time--icon::before {
+.price__time--icon::before {
   display: inline-block;
   margin-right: 0.4rem;
   content: url(../images/icon-clock.svg);
@@ -179,34 +179,34 @@ main {
   height: 1.125rem;
 }
 
-.card__author {
+.author {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.9375rem;
 }
 
-.card__author--border {
+.author {
   padding-top: 1.0625rem;
   margin-bottom: 0.625rem;
   border-top: 1px solid hsla(215, 51%, 70%, 0.2);
 }
 
-.card__author__avatar {
+.author__avatar {
   width: 2.0625rem;
   border: 1px solid hsl(0, 0%, 100%);
   border-radius: 3.125rem;
   height: auto;
 }
 
-.card__author__paragraph {
+.author__paragraph {
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.012em;
   color: hsl(215, 51%, 70%);
 }
 
-.card__author__paragraph__link {
+.author__name {
   font-weight: 400;
   color: hsl(0, 0%, 100%);
   transition: color 0.5s ease;
@@ -214,20 +214,20 @@ main {
 
 @media (hover: hover) {
 
-  .card__item--overlay:hover::after {
+  .item-preview:hover::after {
     opacity: 1;
   }
   
-  .card__item--overlay:hover::before {
+  .item-preview:hover::before {
     opacity: 1;
   }
 
-  .card__title--hover:hover {
+  .card__title:hover {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
   }
 
-  .card__author__paragraph__link--hover:hover {
+  .author__name:hover {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
   }
