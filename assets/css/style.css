@@ -184,9 +184,6 @@ abbr {
   flex-direction: row;
   align-items: center;
   gap: 0.9375rem;
-}
-
-.author {
   padding-top: 1.0625rem;
   margin-bottom: 0.625rem;
   border-top: 1px solid hsla(215, 51%, 70%, 0.2);
